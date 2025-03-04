@@ -46,5 +46,11 @@ bash standalone_embed.sh stop
 Milvus is vector database and earlier there was no UI. As of v2.5.0, we can access Milvus Web UI using-
 http://localhost:9091/webui/
 
+![image](https://github.com/user-attachments/assets/c44a534b-1f9a-49a7-8469-6ff6d0d8608e)
+
+## Run Milvus on Cloud
+
+Zilliz Cloud
+
 ![Uploading image.png…]()
 
