@@ -6,10 +6,10 @@ podman machine init
 podman machine start
 '''
 
-## Download Milvus File
+### Download Milvus File
 curl -sfL https://raw.githubusercontent.com/milvus-io/milvus/master/scripts/standalone_embed.sh -o standalone_embed.sh
 
-## Start Installation
+### Start Installation
 bash standalone_embed.sh start
 
 Output:
@@ -27,22 +27,22 @@ Writing manifest to image destination
 Error: statfs /Users/prashantsharma/Documents/github/milvus/volumes/milvus: no such file or directory
 Start failed.
 
-## Make Directory
+### Make Directory
 mkdir -p /Users/prashantsharma/Documents/github/milvus/volumes/milvus
 
-## Verify Podman Connection list
+### Verify Podman Connection list
 podman system connection list 
 
-## Start after creating directory
+### Start after creating directory
 bash standalone_embed.sh start   
 Wait for Milvus Starting...
 Start successfully.
 To change the default Milvus configuration, add your settings to the user.yaml file and then restart the service.
 
-## Stop Milvus Service
+### Stop Milvus Service
 bash standalone_embed.sh stop
 
-## Milvus WebUI
+### Milvus WebUI
 Milvus is vector database and earlier there was no UI. As of v2.5.0, we can access Milvus Web UI using-
 http://localhost:9091/webui/
 
